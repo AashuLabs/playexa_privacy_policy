@@ -4,120 +4,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Playexa Video Player</title>
+    <title>Privacy Policy - PlayExa Video Player</title>
     <style>
+        :root {
+            --primary-color: #e50914;
+            /* Premium Red Accent */
+            --bg-color: #f4f6f9;
+            --text-color: #3b4252;
+            --heading-color: #1a1e27;
+            --card-bg: #ffffff;
+            --border-color: #e5e9f0;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #fcfcfc;
+            background-color: var(--card-bg);
+            padding: 50px 60px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.02);
         }
 
         h1,
         h2,
         h3 {
-            color: #111;
+            color: var(--heading-color);
+            line-height: 1.3;
         }
 
         h1 {
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 10px;
+            font-size: 2.2rem;
+            margin-top: 0;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
 
         h3 {
-            margin-top: 30px;
+            font-size: 1.25rem;
+            margin-top: 45px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+            color: var(--heading-color);
         }
 
         p {
-            margin-bottom: 15px;
+            margin-bottom: 18px;
+            font-size: 1.05rem;
         }
 
         ul {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
             padding-left: 20px;
+            background-color: #fbfcfd;
+            padding: 20px 20px 20px 45px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
         }
 
         li {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: #111;
+            font-weight: 600;
         }
 
         .date {
-            font-weight: bold;
-            color: #555;
-            margin-bottom: 30px;
+            font-weight: 600;
+            color: #8892b0;
+            margin-bottom: 35px;
             display: inline-block;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         .footer-note {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eaeaea;
+            margin-top: 50px;
+            padding: 25px;
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
             font-style: italic;
-            color: #666;
-            font-size: 0.9em;
+            color: #64748b;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            ul {
+                padding-left: 30px;
+            }
         }
     </style>
 </head>
 
 <body>
+    <div class="container">
 
-    <h1>Privacy Policy for Playexa Video Player</h1>
-    <span class="date">Effective Date: 21 April 2026</span>
+        <h1>Privacy Policy for PlayExa Video Player</h1>
+        <span class="date">Effective Date: 18 July 2026</span>
 
-    <p>Playexa Video Player is a media player application designed to play videos stored locally on your device. We are
-        committed to protecting your privacy and providing a transparent user experience.</p>
+        <p>PlayExa Video Player ("the App", "we", "our", or "us") is a media player application designed to play videos
+            stored locally on your device. We are committed to protecting your privacy and ensuring a safe, transparent
+            user
+            experience.</p>
+        <p>This Privacy Policy explains our data practices. By using PlayExa Video Player, you agree to the terms
+            outlined
+            in this policy.</p>
 
-    <h3>1. Information Collection</h3>
-    <p>Playexa does <strong>not collect personal data</strong> or share any personal information.</p>
-    <p>The app does not require:</p>
-    <ul>
-        <li>Account registration or login</li>
-        <li>An active internet connection for its core functionality</li>
-        <li>Any personal user data</li>
-    </ul>
+        <h3>1. Information Collection and Use</h3>
+        <p>PlayExa Video Player is designed with a privacy-first approach. We strictly <strong>do not collect, store, or
+                process any personal data</strong>.</p>
+        <p>The App explicitly <strong>DOES NOT</strong>:</p>
+        <ul>
+            <li>Require user account registration or login.</li>
+            <li>Collect personal information, location data, or device identifiers.</li>
+            <li>Collect crash reports, diagnostics, analytics, or usage statistics.</li>
+            <li>Upload, transmit, or back up your media files to any remote server or cloud network.</li>
+            <li>Use Firebase, Crashlytics, or similar backend reporting tools.</li>
+        </ul>
 
-    <h3>2. Permissions Usage</h3>
-    <p>To function as a video player, Playexa requires standard permissions to access the media files stored on your
-        Android device:</p>
-    <ul>
-        <li><strong>READ_MEDIA_VIDEO</strong> (Android 13 and above)</li>
-        <li><strong>READ_EXTERNAL_STORAGE</strong> (Android 12 and below)</li>
-    </ul>
-    <p>These permissions are strictly used <strong>only to access and display local video files</strong>.</p>
-    <p>We do not extract or upload your video files to any remote server or cloud network.</p>
+        <h3>2. Advertising and Third-Party Tracking</h3>
+        <p>To guarantee a secure and private experience, PlayExa Video Player <strong>does not use any advertising SDKs,
+                analytics SDKs, or third-party tracking technologies</strong>.</p>
+        <p>We do not sell, rent, monetize, or share user data with advertising companies, data brokers, or any other
+            third
+            parties.</p>
 
-    <h3>3. Local Processing and File Management</h3>
-    <ul>
-        <li>All data processing occurs <strong>locally on your device</strong>.</li>
-        <li>The app allows users to <strong>delete or rename video files</strong>.</li>
-        <li><strong>Files are modified only after explicit user action and confirmation.</strong></li>
-        <li>No files are modified, deleted, or altered without your direct consent.</li>
-    </ul>
+        <h3>3. Permissions Usage</h3>
+        <p>To function strictly as a local video player, PlayExa Video Player requires standard Android permissions to
+            discover and display media files stored on your Android device:</p>
+        <ul>
+            <li><strong>READ_MEDIA_VIDEO</strong> (Android 13 and above)</li>
+            <li><strong>READ_EXTERNAL_STORAGE</strong> (Android 12 and below)</li>
+        </ul>
+        <p>These permissions are used <strong>exclusively to access and display your local video files</strong> within
+            the
+            App.</p>
+        <p>These permissions are requested only to enable media browsing and playback. The App never uploads or shares your files with any external server.</p>
 
-    <h3>4. Data Sharing & Third-Party Services</h3>
-    <p>Playexa does not require an active internet connection for its core functionality. No data is transmitted over
-        the internet, and we do not use
-        background analytics, tracking networks, or third-party tracking services.</p>
-    <p>Playexa does <strong>not share any data</strong> with advertising companies or other third parties. We do not
-        sell, rent, or monetize any user data.</p>
+        <h3>4. Local Processing and File Management</h3>
+        <ul>
+            <li><strong>Zero Cloud Processing:</strong> All media rendering and data processing occur entirely
+                <strong>locally on your device</strong>.
+            </li>
+            <li><strong>File Operations:</strong> The App allows you to rename or delete your video files. <strong>Files
+                    are
+                    modified only after explicit user action and confirmation.</strong></li>
+            <li>No files are altered, removed, or shared automatically or without your direct consent.</li>
+        </ul>
 
-    <h3>5. Changes to This Policy</h3>
-    <p>We may update this Privacy Policy occasionally if Android permission requirements change. Any modifications will
-        be reflected on this page.</p>
+        <h3>5. Network Access</h3>
+        <p>The core video playback functionality of PlayExa Video Player operates entirely offline using local video files stored on your device.</p>
+        <p>Optional user-initiated actions, such as clicking a button to contact support, will open your device’s
+            default
+            email client. Sending this email may require an active internet connection provided by that selected
+            application. The App itself does not independently communicate over the internet.</p>
 
-    <h3>6. Contact Us</h3>
-    <p>If you have any questions or concerns about this Privacy Policy, please feel free to contact the developer at:
-    </p>
-    <p>&#128231; <strong>Email:</strong> <a href="mailto:metaliyaaashish4@gmail.com">metaliyaaashish4@gmail.com</a></p>
+        <h3>6. Changes to This Policy</h3>
+        <p>We may update this Privacy Policy periodically to reflect changes in Android permission requirements or
+            Google
+            Play Developer Policies. We will notify you of any changes by posting the new Privacy Policy on this page.
+            You
+            are advised to review this Privacy Policy periodically for any changes.</p>
 
-    <div class="footer-note">
-        Summary: Playexa operates entirely on your local device and does not collect
-        personal data.
+        <h3>7. Contact Us</h3>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please feel free to contact
+            the
+            developer directly at:</p>
+        <p>&#128231; <strong>Email:</strong> <a href="mailto:ashulabs.support@gmail.com">ashulabs.support@gmail.com</a>
+        </p>
+
+        <div class="footer-note">
+            Summary: PlayExa Video Player operates entirely on your local device, requires no internet connection for
+            core
+            features, uses no third-party tracking or advertising, and does not collect or share personal data.
+        </div>
     </div>
-
 </body>
 
 </html>
