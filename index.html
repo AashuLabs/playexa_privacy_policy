@@ -8,7 +8,6 @@
     <style>
         :root {
             --primary-color: #e50914;
-            /* Premium Red Accent */
             --bg-color: #f4f6f9;
             --text-color: #3b4252;
             --heading-color: #1a1e27;
@@ -36,9 +35,7 @@
             border: 1px solid rgba(0, 0, 0, 0.02);
         }
 
-        h1,
-        h2,
-        h3 {
+        h1, h2, h3 {
             color: var(--heading-color);
             line-height: 1.3;
         }
@@ -114,23 +111,11 @@
             text-align: center;
         }
 
-        /* Mobile specific adjustments */
         @media (max-width: 600px) {
-            body {
-                padding: 15px;
-            }
-
-            .container {
-                padding: 30px 20px;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            ul {
-                padding-left: 30px;
-            }
+            body { padding: 15px; }
+            .container { padding: 30px 20px; }
+            h1 { font-size: 1.8rem; }
+            ul { padding-left: 30px; }
         }
     </style>
 </head>
@@ -139,83 +124,50 @@
     <div class="container">
 
         <h1>Privacy Policy for PlayExa Video Player</h1>
-        <span class="date">Effective Date: 18 July 2026</span>
+        <span class="date">Effective Date: 10 August 2026</span>
 
         <p>PlayExa Video Player ("the App", "we", "our", or "us") is a media player application designed to play videos
-            stored locally on your device. We are committed to protecting your privacy and ensuring a safe, transparent
-            user
-            experience.</p>
-        <p>This Privacy Policy explains our data practices. By using PlayExa Video Player, you agree to the terms
-            outlined
-            in this policy.</p>
+            stored locally on your device. We are committed to protecting your privacy and ensuring a transparent, safe user experience.</p>
+        <p>This Privacy Policy explains our data practices, including permissions used for local video playback and advertising services. By using PlayExa Video Player, you agree to the terms outlined in this policy.</p>
 
-        <h3>1. Information Collection and Use</h3>
-        <p>PlayExa Video Player is designed with a privacy-first approach. We strictly <strong>do not collect, store, or
-                process any personal data</strong>.</p>
-        <p>The App explicitly <strong>DOES NOT</strong>:</p>
+        <h3>1. Local Media Privacy &amp; Information Collection</h3>
+        <p>PlayExa Video Player is designed with local media privacy as a top priority. Your local videos, audio tracks, and personal media files are never collected, stored, or transmitted to external servers.</p>
         <ul>
-            <li>Require user account registration or login.</li>
-            <li>Collect personal information, location data, or device identifiers.</li>
-            <li>Collect crash reports, diagnostics, analytics, or usage statistics.</li>
-            <li>Upload, transmit, or back up your media files to any remote server or cloud network.</li>
-            <li>Use Firebase, Crashlytics, or similar backend reporting tools.</li>
+            <li><strong>Zero Cloud Storage:</strong> The App does not upload, back up, or transmit your media files to any remote server or cloud service.</li>
+            <li><strong>No Account Required:</strong> The App operates without requiring user accounts or registration.</li>
+            <li><strong>Local Processing:</strong> All media discovery, thumbnail generation, and playback rendering occur entirely on your local device.</li>
         </ul>
 
-        <h3>2. Advertising and Third-Party Tracking</h3>
-        <p>To guarantee a secure and private experience, PlayExa Video Player <strong>does not use any advertising SDKs,
-                analytics SDKs, or third-party tracking technologies</strong>.</p>
-        <p>We do not sell, rent, monetize, or share user data with advertising companies, data brokers, or any other
-            third
-            parties.</p>
+        <h3>2. Third-Party Advertising (Google AdMob &amp; UMP)</h3>
+        <p>To support ongoing development while keeping the application free, PlayExa Video Player integrates Google AdMob to serve banner advertisements in the main video list.</p>
+        <ul>
+            <li><strong>Google Mobile Ads SDK (AdMob):</strong> Google Mobile Ads SDK (AdMob) may automatically collect and process certain information, which may include IP address, device or account identifiers, user interaction information, and diagnostic information, for purposes such as providing and measuring advertising, analytics, fraud prevention, and related services. For details on how Google handles advertising data, visit <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy &amp; Terms</a>.</li>
+            <li><strong>User Messaging Platform (UMP) &amp; Consent Management:</strong> We use Google's User Messaging Platform (UMP) SDK to facilitate user consent management in compliance with applicable privacy regulations (such as GDPR in the European Economic Area, UK, and Switzerland). Users can review or manage their ad consent preferences at any time via the "Privacy &amp; Consent Settings" option in the App's Settings menu.</li>
+        </ul>
 
         <h3>3. Permissions Usage</h3>
-        <p>To function strictly as a local video player, PlayExa Video Player requires standard Android permissions to
-            discover and display media files stored on your Android device:</p>
+        <p>PlayExa Video Player requests standard Android permissions necessary for local media discovery and online banner ad delivery:</p>
         <ul>
-            <li><strong>READ_MEDIA_VIDEO</strong> (Android 13 and above)</li>
-            <li><strong>READ_EXTERNAL_STORAGE</strong> (Android 12 and below)</li>
-        </ul>
-        <p>These permissions are used <strong>exclusively to access and display your local video files</strong> within
-            the
-            App.</p>
-        <p>These permissions are requested only to enable media browsing and playback. The App never uploads or shares your files with any external server.</p>
-
-        <h3>4. Local Processing and File Management</h3>
-        <ul>
-            <li><strong>Zero Cloud Processing:</strong> All media rendering and data processing occur entirely
-                <strong>locally on your device</strong>.
-            </li>
-            <li><strong>File Operations:</strong> The App allows you to rename or delete your video files. <strong>Files
-                    are
-                    modified only after explicit user action and confirmation.</strong></li>
-            <li>No files are altered, removed, or shared automatically or without your direct consent.</li>
+            <li><strong>READ_MEDIA_VIDEO</strong> (Android 13 and above): Exclusively used to discover and display local video files on your device.</li>
+            <li><strong>READ_EXTERNAL_STORAGE</strong> (Android 12 and below): Exclusively used to discover and display local video files on your device.</li>
+            <li><strong>INTERNET &amp; ACCESS_NETWORK_STATE:</strong> Used strictly by the Google Mobile Ads SDK to fetch banner advertisements and verify network connectivity.</li>
         </ul>
 
-        <h3>5. Network Access</h3>
-        <p>The core video playback functionality of PlayExa Video Player operates entirely offline using local video files stored on your device.</p>
-        <p>Optional user-initiated actions, such as clicking a button to contact support, will open your device’s
-            default
-            email client. Sending this email may require an active internet connection provided by that selected
-            application. The App itself does not independently communicate over the internet.</p>
+        <h3>4. Local File Operations &amp; Network Access</h3>
+        <ul>
+            <li><strong>Local File Operations:</strong> The App allows users to perform local file management actions (such as renaming or deleting video files). All file modifications are performed locally on your device only after explicit user confirmation.</li>
+            <li><strong>Network Access:</strong> Core local video playback and media processing operate on the device, while an internet connection may be used by Google Mobile Ads to request advertisements and by user-initiated external actions such as contacting support.</li>
+        </ul>
 
-        <h3>6. Changes to This Policy</h3>
-        <p>We may update this Privacy Policy periodically to reflect changes in Android permission requirements or
-            Google
-            Play Developer Policies. We will notify you of any changes by posting the new Privacy Policy on this page.
-            You
-            are advised to review this Privacy Policy periodically for any changes.</p>
+        <h3>5. Changes to This Policy</h3>
+        <p>We may update this Privacy Policy periodically to reflect changes in app functionality, regulatory requirements, or Google Play Developer Policies. We encourage you to review this page periodically.</p>
 
-        <h3>7. Contact Us</h3>
-        <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please feel free to contact
-            the
-            developer directly at:</p>
-        <p>&#128231; <strong>Email:</strong> <a href="mailto:ashulabs.support@gmail.com">ashulabs.support@gmail.com</a>
-        </p>
+        <h3>6. Contact Us</h3>
+        <p>If you have any questions, concerns, or inquiries regarding this Privacy Policy or data handling, please contact us at:</p>
+        <p>&#128231; <strong>Email:</strong> <a href="mailto:ashulabs.support@gmail.com">ashulabs.support@gmail.com</a></p>
 
         <div class="footer-note">
-            Summary: PlayExa Video Player operates entirely on your local device, requires no internet connection for
-            core
-            features, uses no third-party tracking or advertising, and does not collect or share personal data.
+            Summary: PlayExa Video Player processes your local media files strictly on your device. Google AdMob banner ads and UMP consent flow are used to display advertisements and manage privacy choices transparently.
         </div>
     </div>
 </body>
